@@ -13,23 +13,6 @@ function App() {
     return `${firstName} ${lastName} (${gender})`;
   }
 
- /* const handleFirstNameChange = (event) => {
-    const value = event.target.value;
-    setFirstName(value);
-    setResult(getResult(value, lastName, gender));
-  };
-
-const handleLastNameChange = (event) => {
-  const value = event.target.value;
-  setLastName(value);
-  setResult(getResult(firstName, value, gender));
-  };
-
-const handleGenderChange = (event) => {
-  const value = event.target.value;
-  setGender(value);
-  setResult(getResult(firstName, lastName, value));
-  }; */
   const handleFirstNameChange = (event) => {
     const value = event.target.value;
     console.log('First Name Change:', value);
@@ -264,40 +247,3 @@ const handleGenderChange = (event) => {
 }
 
 export default App; 
-
- /*import React, { useState } from 'react';
-
-function App() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [gender, setGender] = useState('');
-
-  const handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
-  };
-
-  const handleLastNameChange = (event) => {
-    setLastName(event.target.value);
-  };
-
-  const handleGenderChange = (event) => {
-    setGender(event.target.value);
-  };
-
-  const handleButtonClick = () => {
-    console.log('First Name:', firstName);
-    console.log('Last Name:', lastName);
-    console.log('Gender:', gender);
-  };
-
-  return (
-    <div>
-      <input type="text" value={firstName} onChange={handleFirstNameChange} placeholder="First Name" />
-      <input type="text" value={lastName} onChange={handleLastNameChange} placeholder="Last Name" />
-      <input type="text" value={gender} onChange={handleGenderChange} placeholder="Gender" />
-      <button onClick={handleButtonClick}>Log Input</button>
-    </div>
-  );
-}
-
-export default App; */
